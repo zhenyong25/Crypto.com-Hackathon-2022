@@ -1,11 +1,19 @@
-var web3; 
+// const ethereumButton = document.querySelector('.enableEthereumButton');
 
-async function Connect(){
-    await window.web3.currentProvider.enable(); 
-    web3 = new Web3(window.web3.currentProvider);
-    if (web3){
-        document.location.href="main_page/main_page.html"
-    } else{
-        
-    }
+// ethereumButton.addEventListener('click', () => {
+//   //Will Start the metamask extension
+//   ethereum.request({ method: 'eth_requestAccounts' });
+// });
+
+const ethereumButton = document.querySelector('.enableEthereumButton');
+const showAccount = document.querySelector('.showAccount');
+
+ethereumButton.addEventListener('click', () => {
+  getAccount();
+});
+
+async function getAccount() {
+  const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+  const account = accounts[0];
+  showAccount.innerHTML = account;
 }

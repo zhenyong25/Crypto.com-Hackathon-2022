@@ -1,3 +1,10 @@
+#connect-button{ 
+    border-radius: 20px; 
+    background-color: aquamarine;
+    padding: 5px 30px;    
+    margin-left: 20px; 
+}
+
 .nav li {
     list-style: none;
     display: inline;
@@ -8,4 +15,35 @@
 
 a {
     text-decoration: none;
+}
+
+.intro {
+    display: inline-block; 
+    text-align: center;
+    height: 10%; 
+    width: 15%;  
+}
+
+.name{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#team-introduction{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 20px; 
+    padding: 20px;
+}
+
+.team-member-intro{
+    margin: auto;
+}
+
+.brief-info {
+    margin: 5px; 
+}
+
+.photo{
+    border-radius: 10px;
+    box-shadow: 5px grey;
 }
