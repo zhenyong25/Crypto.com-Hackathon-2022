@@ -1,0 +1,11 @@
+.nav li {
+    list-style: none;
+    display: inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px; 
+    padding: 15px 20px; 
+}
+
+a {
+    text-decoration: none;
+}
