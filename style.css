@@ -1,89 +1,100 @@
-#connect-button{ 
-    border-radius: 20px; 
-    background-color: aquamarine;
-    padding: 15px 30px;    
-    margin-left: 1200px;
-    display: inline-block;
-    font-weight: bold;
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Acme", sans-serif;
 }
 
-.nav li {
-    list-style: none;
-    display: inline-block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 5px; 
-    padding: 15px 20px; 
+body {
+  background-color: rgb(74, 139, 255);
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+.name {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-size: 1em; */
+}
+
+#team-introduction {
+}
+
+.team-member-intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-container {
+  margin: 20px 0;
+}
+
+.intro-description {
+  padding: 20px;
+}
+
+.intro-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.intro-details h2 {
+  font-size: 40px;
+  font-family: "Francois One", sans-serif;
 }
 
 .intro {
-    display: inline-block; 
-    text-align: center;
-    height: 10%; 
-    width: 15%;  
-    margin-left: 5px;
-    margin-right: 5px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding-left: 20px;
-    padding-right: 20px; 
-    padding-bottom: 20px;
-    border-radius: 15px;
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  height: 30vh;
+  background-color: rgb(167, 199, 255);
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 12px 0px #000000;
+  box-shadow: 0px 0px 12px 0px #000000;
 }
 
-.name{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.intro:hover {
+  -webkit-box-shadow: 0px 0px 26px 0px #000000;
+  box-shadow: 0px 0px 26px 0px #000000;
 }
 
-#team-introduction, #view-wallet{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    margin: 20px; 
-    font-weight: bold;
-    font-size: larger
+.right {
+  grid-template-columns: 2fr 1fr;
+  transform: rotate(10deg);
 }
 
-.team-member-intro{
-    padding-left: 20px; 
-
+.left {
+  grid-template-columns: 1fr 2fr;
+  transform: rotate(-10deg);
 }
 
 .brief-info {
-    margin: 5px; 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: small;
+  font-size: 1em;
 }
 
-.photo{
-    border-radius: 10px;
-    box-shadow: 5px grey;
-    padding-top: 20px;
+.photo {
+  width: 60%;
+  max-width: 210px;
+  border: solid;
+  border-width: 2px;
+  border-radius: 10px;
 }
 
-.logo{
-    display: inline-block;
+.view-product-btn {
+  background-color: rgb(87, 103, 131);
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
 }
 
-.request{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 10px;
-    padding: 30px; 
-    border-radius: 10px;
-    box-shadow: 5px grey;
-    background-color:#152238; 
-    color:white; 
-}
-
-.request-button {
-     padding: 10px 40px; 
-     border-radius: 20px;
-     font-weight: bold;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
-     background-color: white;
-     color: #152238;
-     position: relative;
-     float: right;
-    
+.view-product-btn:hover {
+    background-color: rgb(50, 60, 77);
+    cursor: pointer;
 }
