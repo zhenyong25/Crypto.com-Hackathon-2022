@@ -1,15 +1,17 @@
 #connect-button{ 
     border-radius: 20px; 
     background-color: aquamarine;
-    padding: 5px 30px;    
-    margin-left: 20px; 
+    padding: 15px 30px;    
+    margin-left: 1200px;
+    display: inline-block;
+    font-weight: bold;
 }
 
 .nav li {
     list-style: none;
-    display: inline;
+    display: inline-block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0px; 
+    margin: 5px; 
     padding: 15px 20px; 
 }
 
@@ -35,7 +37,7 @@ a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#team-introduction{
+#team-introduction, #view-wallet{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     margin: 20px; 
@@ -58,4 +60,30 @@ a {
     border-radius: 10px;
     box-shadow: 5px grey;
     padding-top: 20px;
+}
+
+.logo{
+    display: inline-block;
+}
+
+.request{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+    padding: 30px; 
+    border-radius: 10px;
+    box-shadow: 5px grey;
+    background-color:#152238; 
+    color:white; 
+}
+
+.request-button {
+     padding: 10px 40px; 
+     border-radius: 20px;
+     font-weight: bold;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     background-color: white;
+     color: #152238;
+     position: relative;
+     float: right;
+    
 }
