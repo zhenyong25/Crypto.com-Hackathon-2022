@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Page - Home</title>
+    <link rel="stylesheet" href="companyPage.css">
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+    rel="stylesheet"
+    />
+</head>
+<body>
+    <img src=""> 
+    <nav class="navbar">
+        <ul class="nav">
+            <img class="logo" src="../src/img/verifi.jpg">
+            <li class="nav-page"><a href="companyPage.html">Transaction Page</a></li>
+            <li class="nav-page"><a href="verificationPage.html">Verification</a></li>
+
+            <!-- connect and disconnect button  -->
+            <li id="connect-button" class="enableWallet">Connect</li>
+        </ul>
+    </nav>
+
+    <div class="mainPage">
+        <div class="showAccount">Click Connect to get details!</div>
+        <div class="companyAccount">
+            <b>Transactions Performed</b>
+            <div class="txnTable"></div>
+        </div>
+    </div>
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
+    ></script>
+
+    <script>
+        const ethereumButton = document.querySelector('.enableWallet');
+        const showAccount = document.querySelector('.showAccount');
+        const companyAccount = document.querySelector('.companyAccount');
+        const apiKey = "6R4H8RYQHN4WS7TB5JMNPUSRTJFIITGDF4";
+        const txnTable = document.querySelector('.txnTable'); 
+
+        ethereumButton.addEventListener('click', () => {
+            getAccount();
+        });
+
+        async function getAccount() {
+            const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+            const account = accounts[0];
+            if (account != ""){
+                ethereumButton.innerHTML = "Connected!"
+                companyAccount.style.display = "block"
+                makeTable(account)
+            }
+            showAccount.innerHTML ='<b><p>Your Account/Smart Contract:</p></b><p>'+ account+'</p>';
+        }
+
+        const checkResponseStatus = (response) => {
+                    if (!response.ok) throw new Error(`Status code error: ${response.status}`);
+	                return response.json();
+        };
+
+        function makeTable(addr){
+            apiURL = "https://api-testnet.polygonscan.com/api?module=account&action=txlist&address="+addr+"&startblock=0&endblock=99999999&page=1&offset=10&sort=asc&apikey="+apiKey;
+            fetch(apiURL).then(checkResponseStatus).then(data =>{
+                console.log(data);
+                if(data.result.length == 0){
+                    txnTable.innerHTML="No transactions found!"
+                }
+                else{
+                    txnTable.innerHTML="<table class='styled-table'><tr><th>Date</th><th>Value</th><th>To</th></tr>";
+                    data.result.forEach((tx)=>{
+                        console.log(tx.timeStamp, tx.value);
+                        if(tx.from == addr){
+                            var row = document.createElement('tr')
+                            row.innerHTML = "<td>"+new Date(tx.timeStamp*1000).toLocaleDateString("en-UK")+"</td><td>"+tx.value*Math.pow(10,-18)+"</td><td>"+tx.to+"</td></tr>";
+                            txnTable.lastChild.firstChild.appendChild(row);
+                        }
+                    })
+                    
+                }
+            });
+        }
+    
+    </script>
+</body>
+</html>
