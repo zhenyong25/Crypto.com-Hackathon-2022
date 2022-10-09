@@ -1,19 +1,30 @@
-#connect-button{ 
-    border-radius: 20px; 
+.my-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .nav-link-item {
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: 700;
+    /* margin: 0 20px; */
+  }
+  
+  #connect-button {
+    border-radius: 5px;
+    font-size: 20px;
     background-color: aquamarine;
-    padding: 15px 30px;    
-    margin-left: 1200px;
-    display: inline-block;
-    font-weight: bold;
-}
-
-.nav li {
-    list-style: none;
-    display: inline-block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 5px; 
-    padding: 15px 20px; 
-}
+    padding: 5px 15px;
+    border-color: none;
+    font-weight: 700;
+  }
 
 a {
     text-decoration: none;
@@ -66,24 +77,43 @@ a {
     display: inline-block;
 }
 
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.search-input {
+    width: 99%;
+    height: 50px;
+}
+
+.search-icon {
+    border: solid;
+    border-width: 1px;
+    padding: 15px;
+}
 .request{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px;
+    padding: 15px 20px;
+    border-radius: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 10px;
-    padding: 30px; 
-    border-radius: 10px;
     box-shadow: 5px grey;
     background-color:#152238; 
     color:white; 
 }
 
 .request-button {
-     padding: 10px 40px; 
-     border-radius: 20px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 20px;
      font-weight: bold;
      font-family: Verdana, Geneva, Tahoma, sans-serif;
      background-color: white;
      color: #152238;
-     position: relative;
-     float: right;
-    
 }

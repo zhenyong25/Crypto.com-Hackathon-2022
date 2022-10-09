@@ -1,3 +1,126 @@
-.view-header {
+.my-nav {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-link-item {
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: 700;
+  /* margin: 0 20px; */
+}
+
+#connect-button {
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: aquamarine;
+  padding: 5px 15px;
+  border-color: none;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+.intro {
+  display: inline-block;
+  text-align: center;
+  height: 10%;
+  width: 15%;
+  margin-left: 5px;
+  margin-right: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+}
+
+.name {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#team-introduction,
+#view-wallet {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin: 20px;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.team-member-intro {
+  padding-left: 20px;
+}
+
+.brief-info {
+  margin: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+}
+
+.photo {
+  border-radius: 10px;
+  box-shadow: 5px grey;
+  padding-top: 20px;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.request {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 10px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px grey;
+  background-color: #152238;
+  color: white;
+}
+
+.request-button {
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: white;
+  color: #152238;
+  position: relative;
+  float: right;
+}
+
+.view-container {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.vertically-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  border: solid;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.view-header-header {
+  background-color: #152238;
+  color: white;
 }

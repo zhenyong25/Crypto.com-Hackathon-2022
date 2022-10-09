@@ -1,93 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="request.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="request.css" />
 
     <!-- Font Awesome -->
     <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
     />
     <!-- Google Fonts -->
     <link
-    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
     />
     <!-- MDB -->
-    <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
-    rel="stylesheet"
-/>
+    <!-- <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+      rel="stylesheet"
+    /> -->
     <icon></icon>
     <title>Crypto.sg</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Logo -->
-    <img src=""> 
-    <nav class="navbar">
-        <ul class="nav">
-            <img class="logo" src="../src/img/verifi.jpg">
-            <li class="nav-page"><a href="">View</a></li>
-            <li class="nav-page"><a href="">Request</a></li>
-            <li class="nav-page"><a href="login.html">Logout</a></li>
-
-            <!-- connect and disconnect button  -->
-            <li id="connect-button" class="enableEthereumButton">Connect</li>
-            <!-- <h2>Account: <span class="showAccount"></span></h2> -->
-        </ul>
-    </nav>
-
-    <!-- Search Bar  -->
-    <div class="input-group rounded">
-        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-        <span class="input-group-text border-0" id="search-addon">
-          <i class="fas fa-search"></i>
-        </span>
+    <div class="my-nav">
+      <div class="nav-link">
+        <div><img class="logo" src="../src/img/verifi.jpg" /></div>
+        <div class="nav-link-item">
+          <a href="companyPage.html" style="color: black">Transaction Page</a>
+        </div>
+        <div class="nav-link-item">
+          <a href="verificationPage.html" style="color: black">Verification</a>
+        </div>
+        <div class="nav-link-item">
+          <a href="view.html" style="color: black">View</a>
+        </div>
+        <div class="nav-link-item" style="background-color:rgb(149, 0, 255);">
+          <a href="request.html" style="color: white">Request</a>
+        </div>
+        <div class="nav-link-item">
+          <a href="login.html" style="color: black">Logout</a>
+        </div>
       </div>
 
-    <div>
-        <div class="request">
-            Nanyang Technological University (NTU)
-            <span class="request-button">Request</span>
-        </div>
-        <div class="request">
-            National University Singapore (NUS)
-            <span class="request-button">Request</span>
-        </div>
-        <div class="request">
-            Singapore University of Technology and Design (SUTD)
-            <span class="request-button">Request</span>
-        </div>
-        <div class="request">
-            Singapore University of Social Sciences (SUSS)
-            <span class="request-button">Request</span>
-        </div>
-        <div class="request">
-            Nanyang Polytechnic
-            <span class="request-button">Request</span>
-        </div>
-        <div class="request">
-            Singapore Polytechnic
-            <span class="request-button">Request</span>
-        </div>
+      <div>
+        <button id="connect-button" class="enableWallet">Connect</button>
+      </div>
     </div>
-    
-<footer>
+    <hr />
 
-</footer>
+    <!-- Search Bar  -->
+    <div class="search-bar">
+      <input class="search-input" type="search" placeholder="Search" />
+      <span class="search-icon" id="search-addon">
+        <i class="fas fa-search"></i>
+      </span>
+    </div>
 
-<script src="index.js"></script>
+    <div>
+      <div class="request">
+        <p>Nanyang Technological University (NTU)</p>
+        <button class="request-button">Request</button>
+      </div>
+      <div class="request">
+        <p>National University Singapore (NUS)</p>
+        <button class="request-button">Request</button>
+      </div>
+      <div class="request">
+        <p>Singapore University of Technology and Design (SUTD)</p>
+        <button class="request-button">Request</button>
+      </div>
+      <div class="request">
+        <p>Singapore University of Social Sciences (SUSS)</p>
+        <button class="request-button">Request</button>
+      </div>
+      <div class="request">
+        <p>Nanyang Polytechnic</p>
+        <button class="request-button">Request</button>
+      </div>
+      <div class="request">
+        <p>Singapore Polytechnic</p>
+        <button class="request-button">Request</button>
+      </div>
+    </div>
 
-<!-- MDB -->
-<script
-  type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
-></script>
+    <footer></footer>
 
-</body>
-
+    <script src="index.js"></script>
+  </body>
 </html>

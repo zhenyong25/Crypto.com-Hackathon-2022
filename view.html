@@ -4,19 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="view-request.css" />
+    <link rel="stylesheet" href="view.css" />
     <title>Document</title>
   </head>
   <body>
-    <div>
-      <h1>View</h1>
+    <div class="my-nav">
+      <div class="nav-link">
+        <div><img class="logo" src="../src/img/verifi.jpg" /></div>
+        <div class="nav-link-item">
+          <a href="companyPage.html" style="color: black">Transaction Page</a>
+        </div>
+        <div class="nav-link-item">
+          <a href="verificationPage.html" style="color: black">Verification</a>
+        </div>
+        <div class="nav-link-item" style="background-color: rgb(149, 0, 255)">
+          <a href="view.html" style="color: rgb(255, 255, 255)">View</a>
+        </div>
+        <div class="nav-link-item">
+          <a href="request.html" style="color: black">Request</a>
+        </div>
+        <div class="nav-link-item">
+          <a href="login.html" style="color: black">Logout</a>
+        </div>
+      </div>
+
+      <div>
+        <button id="connect-button" class="enableWallet">Connect</button>
+      </div>
     </div>
+
+    <hr />
+
     <div class="view-container">
+      <div class="view-header view-header-header">
+        <h3 class="vertically-center">Account Name</h3>
+        <h3 class="vertically-center">Public Address</h3>
+        <h3 class="vertically-center">Token</h3>
+      </div>
       <div class="view-header">
-        <div>Account Name</div>
-        <div>Public Address</div>
-        <div>Token</div>
+        <p>Degree</p>
+        <p>0xabcddefefsca</p>
+        <p>01903901ie01</p>
+      </div>
+      <div class="view-header">
+        <p>Crypto.com</p>
+        <p>0xabcddefefsca</p>
+        <p>01903901ie01</p>
+      </div>
+      <div class="view-header">
+        <p>Binance</p>
+        <p>0xabcddefefsca</p>
+        <p>01903901ie01</p>
       </div>
     </div>
   </body>
+  <script src="index.js"></script>
 </html>
