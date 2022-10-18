@@ -1,0 +1,44 @@
+a {
+  text-decoration: none;
+}
+
+/* Navbar Styling */
+.my-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-link-item {
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: 700;
+  /* margin: 0 5px; */
+}
+
+#connect-button {
+  border-radius: 20px;
+  font-size: 20px;
+  background-color: aquamarine;
+  padding: 5px 15px;
+  border-color: none;
+  font-weight: 700;
+}
+
+.nav-active {
+  background-color: rgb(149, 0, 255);
+}
+
+/* Used in verification, companyPage, login */
+.mainPage {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}

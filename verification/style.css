@@ -1,0 +1,23 @@
+.content,
+.details {
+  margin: 20px;
+}
+
+.content {
+  border: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.verifyButton {
+    width: 805;
+    border-radius: 20px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    padding: 15px 30px;
+    /* display: inline-block; */
+  }
