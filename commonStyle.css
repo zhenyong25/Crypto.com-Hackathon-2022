@@ -63,23 +63,31 @@ a {
   font-weight: 700;
 }
 
-#connect-button {
-  border-radius: 20px;
+.logout-button {
+  margin-left: 10px;
+  border: none;
+  border-radius: 15px;
   border-width: 1px;
-  font-size: 12px;
-  background-image: linear-gradient(to right, #051937, #003150, #004964);
+  font-size: 18px;
+  background-image: linear-gradient(
+    to left,
+    #5d9b9b,
+    #428985,
+    #27776e,
+    #006658
+  );
   color: aliceblue;
-  padding: 10px 15px;
+  padding: 5px 15px;
   font-weight: 700;
 }
 
-#connect-button:hover {
+.logout-button:hover {
   cursor: pointer;
   background-color: #004964;
 }
 
 .nav-active {
-  background-color: rgb(13, 38, 61);
+  background-color: #176f8f;
   border-radius: 5px;
 }
 /* End Navbar Styling */

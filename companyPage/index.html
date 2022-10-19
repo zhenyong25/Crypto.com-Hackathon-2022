@@ -19,37 +19,46 @@
               <a href="index.html" style="color: white">Transaction</a>
             </div>
             <div class="nav-link-item">
-              <a href="../verification/index.html" style="color: rgb(13, 38, 61)"
+              <a
+                href="../verification/index.html"
+                style="color: rgb(13, 38, 61)"
                 >Verification</a
               >
             </div>
             <div class="nav-link-item">
-              <a href="../view/index.html" style="color: rgb(13, 38, 61)">View</a>
+              <a href="../view/index.html" style="color: rgb(13, 38, 61)"
+                >View</a
+              >
             </div>
             <div class="nav-link-item">
-              <a href="../request/index.html" style="color: rgb(13, 38, 61)">Request</a>
-            </div>
-            <div class="nav-link-item">
-              <a href="../login/" style="color: rgb(13, 38, 61)">Logout</a>
+              <a href="../request/index.html" style="color: rgb(13, 38, 61)"
+                >Request</a
+              >
             </div>
           </div>
         </div>
 
         <div>
-          <button id="connect-button" class="enableWallet">Connect</button>
+          <button class="logout-button" class="enableWallet">
+            <a href="../login/" style="color: rgb(255, 255, 255)">Logout</a>
+          </button>
         </div>
       </div>
     </div>
 
     <hr />
 
-    <div class="mainPage">
-      <div class="showAccount">Click Connect to get details!</div>
-      <div class="companyAccount">
-        <b>Transactions Performed</b>
-        <div class="txnTable"></div>
+    <div class="transaction-form">
+      <div class="mainPage">
+        <div class="showAccount">Click Connect to get details!</div>
+        <div class="companyAccount">
+          <div><b>Transactions Performed</b></div>
+          <div class="txnTable"></div>
+        </div>
       </div>
+      <button id="connect-button" class="enableWallet">Connect</button>
     </div>
+
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"

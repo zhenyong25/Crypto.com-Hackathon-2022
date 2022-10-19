@@ -1,9 +1,23 @@
-/* CSS for companyPage and verification*/
+.transaction-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.transaction-form {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .companyAccount {
   display: none;
 }
 
 .styled-table {
+  border: solid;
   border-collapse: collapse;
   margin: 25px 0;
   font-size: 0.9em;
@@ -23,7 +37,18 @@
   padding: 12px 15px;
 }
 
-.showAccount,
-.companyAccount {
-  padding: 20px;
+#connect-button {
+  background-color: rgb(13, 38, 61);
+  color: white;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 5px 10px;
+}
+
+#connect-button:hover {
+  color: rgb(13, 38, 61);
+  background-color: white;
+  cursor: pointer;
 }
