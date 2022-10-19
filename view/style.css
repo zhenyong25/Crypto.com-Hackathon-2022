@@ -1,26 +1,34 @@
 .view-container {
-  width: 80%;
-  margin: 40px auto;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.view-container > h1 {
+  font-weight: 100;
+  padding: 5px;
+  margin-top: 10px;
 }
 
 .vertically-center {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .view-header {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
-  border: solid;
-  margin: 10px 0;
-  padding: 15px;
-  border-radius: 5px;
-  font-size: 20px;
+  grid-template-columns: 2fr 3fr 3fr;
+  margin: 5px 0;
+  padding: 10px 20px;
+  /* padding: 5px; */
+  font-size: 18px;
+  background-color: rgba(130, 129, 129, 0.4);
+}
+
+.view-header:hover {
+  background-color: rgba(130, 129, 129, 0.8);
 }
 
 .view-header-header {
-  background-color: #152238;
-  color: white;
+  background-color: rgba(130, 129, 129, 0.8);
+  color: rgb(0, 0, 0);
 }

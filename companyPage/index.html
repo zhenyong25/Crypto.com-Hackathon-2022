@@ -9,28 +9,35 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="my-nav">
-      <div class="nav-link">
-        <div><img class="logo" src="../src/img/verifi.jpg" /></div>
-        <div class="nav-link-item nav-active">
-          <a href="index.html" style="color: white">Transaction Page</a>
+    <div class="nav-container">
+      <div class="my-nav">
+        <div class="nav-link">
+          <div class="nav-title"><h1>Verifi</h1></div>
+          <!-- <div class="logo"><img src="../src/img/verifi.jpg" /></div> -->
+          <div class="nav-link-group">
+            <div class="nav-link-item nav-active">
+              <a href="index.html" style="color: white">Transaction</a>
+            </div>
+            <div class="nav-link-item">
+              <a href="../verification/index.html" style="color: rgb(13, 38, 61)"
+                >Verification</a
+              >
+            </div>
+            <div class="nav-link-item">
+              <a href="../view/index.html" style="color: rgb(13, 38, 61)">View</a>
+            </div>
+            <div class="nav-link-item">
+              <a href="../request/index.html" style="color: rgb(13, 38, 61)">Request</a>
+            </div>
+            <div class="nav-link-item">
+              <a href="../login/" style="color: rgb(13, 38, 61)">Logout</a>
+            </div>
+          </div>
         </div>
-        <div class="nav-link-item">
-          <a href="../verification/index.html" style="color: black">Verification</a>
-        </div>
-        <div class="nav-link-item">
-          <a href="../view/index.html" style="color: black">View</a>
-        </div>
-        <div class="nav-link-item">
-          <a href="../request/index.html" style="color: black">Request</a>
-        </div>
-        <div class="nav-link-item">
-          <a href="../login/" style="color: black">Logout</a>
-        </div>
-      </div>
 
-      <div>
-        <button id="connect-button" class="enableWallet">Connected</button>
+        <div>
+          <button id="connect-button" class="enableWallet">Connect</button>
+        </div>
       </div>
     </div>
 

@@ -9,53 +9,66 @@
     <title>Verifi</title>
   </head>
   <body>
-    <div class="my-nav">
-      <div class="nav-link">
-        <div><img class="logo" src="../src/img/verifi.jpg" /></div>
-        <div class="nav-link-item">
-          <a href="../companyPage/index.html" style="color: black">Transaction Page</a>
+    <div class="nav-container">
+      <div class="my-nav">
+        <div class="nav-link">
+          <div class="nav-title"><h1>Verifi</h1></div>
+          <!-- <div class="logo"><img src="../src/img/verifi.jpg" /></div> -->
+          <div class="nav-link-group">
+            <div class="nav-link-item">
+              <a href="../companyPage/index.html" style="color: rgb(13, 38, 61)"
+                >Transaction</a
+              >
+            </div>
+            <div class="nav-link-item nav-active">
+              <a href="index.html" style="color: white">Verification</a>
+            </div>
+            <div class="nav-link-item">
+              <a href="../view/index.html" style="color: rgb(13, 38, 61)"
+                >View</a
+              >
+            </div>
+            <div class="nav-link-item">
+              <a href="../request/index.html" style="color: rgb(13, 38, 61)"
+                >Request</a
+              >
+            </div>
+            <div class="nav-link-item">
+              <a href="../login/" style="color: rgb(13, 38, 61)">Logout</a>
+            </div>
+          </div>
         </div>
-        <div class="nav-link-item nav-active">
-          <a href="index.html" style="color: white">Verification</a>
-        </div>
-        <div class="nav-link-item">
-          <a href="../view/index.html" style="color: black">View</a>
-        </div>
-        <div class="nav-link-item">
-          <a href="../request/index.html" style="color: black">Request</a>
-        </div>
-        <div class="nav-link-item">
-          <a href="../login/" style="color: black">Logout</a>
-        </div>
-      </div>
 
-      <div>
-        <button id="connect-button" class="enableWallet">Connected</button>
+        <div>
+          <button id="connect-button" class="enableWallet">Connect</button>
+        </div>
       </div>
     </div>
     <hr />
-    <div class="mainPage">
-      <div class="content">
-        <h3>Verification of Certificate</h3>
-        <br />
-        <label>User Wallet Address:</label>
-        <input type="text" id="address" name="address" required /><br /><br />
-        <label for="company">Choose a company:</label>
-        <input list="brow" id="dropInput" />
-        <datalist id="brow">
-          <option value="NTU"></option>
-          <option value="NUS"></option>
-        </datalist>
 
-        <br />
-        <button class="verifyButton" onclick="callTransaction()">Verify</button
-        ><br /><br />
-        <p id="demo"></p>
-      </div>
-      <div class="details">
-        <div id="table"><p id="list"></p></div>
+    <div class="verification-container">
+      <div class="verification-form">
+        <div class="content">
+          <h2>Verification of Certificate</h2>
+          <label>User Wallet Address:</label>
+          <input type="text" id="address" name="address" required />
+          <label for="company">Choose a company:</label>
+          <input list="brow" id="dropInput" />
+          <datalist id="brow">
+            <option value="NTU"></option>
+            <option value="NUS"></option>
+          </datalist>
+          <button class="verifyButton" onclick="callTransaction()">
+            Verify
+          </button>
+          <p id="demo"></p>
+        </div>
+        <div class="details">
+          <div id="table"><p id="list"></p></div>
+        </div>
       </div>
     </div>
+
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
